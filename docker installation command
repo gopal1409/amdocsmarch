@@ -33,6 +33,23 @@
    41  docker run -p 80:80 -d --name webhost nginx
    42  clear
    43  ip a
+   
+   volume in container
+    111  docker run -d --name mysql -e MYSQL_ALLOW_EMPTY=true -v mysql-db:/var/lib/mysql mysql:8.0
+  112  docker ps
+  113  docker volume ls
+  114  docker volume inspect mysql-db
+  115  cd /var/lib/docker/volumes/mysql-db/_data
+  116  ls
+ 127  docker ps
+  128  docker rm 607
+  129  docker stop 607
+  130  docker rm 607
+  131  docker ps
+  132  docker ps -a
+  133  docker volume ls
+  134  history
+
    44  docker network ls
    45  docker network inspect bridge
    46  history
