@@ -8,3 +8,39 @@
    run you first docker container
    docker container run --publish 80:80 --detach nginx
 
+19  docker container run --publish 80:80 nginx
+   20  docker images
+   21  docker rm nginx
+   22  docker rmi 62d
+   23  docker ps
+   24  docker ps -a
+   25  docker rm 57b
+   26  docker images
+   27  docker rm 62s
+   28  docker rmi 62d
+   29  clear
+   30  docker container run --publish 80:80 --detach nginx
+   31  docker ps
+   32  docker container run --publish 81:80 --detach nginx
+   33  docker ps
+   34  docker images
+   35  docker ps
+   36  ps aux
+   37  docker ps
+   38  docker top f233
+   39  docker run --name mongo -d mongo
+   40  docker ps
+   41  docker run -p 80:80 -d --name webhost nginx
+   42  clear
+   43  ip a
+   44  docker network ls
+   45  docker network inspect bridge
+   46  history
+   47  docker network inspect bridge
+   48  docker run -p 80 -d nginx
+   49  docker ps
+   50  docker run -d nginx
+   51  docker ps
+   52  history
+
+
