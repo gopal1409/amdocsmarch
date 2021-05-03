@@ -61,3 +61,28 @@
    52  history
 
 
+command to create docker images
+ 135  mkdir pythonapp
+  136  cd pythonapp/
+  137  touch index.py
+  138  requirement.txt
+  139  touch requirement.txt
+  140  vi requirement.txt
+  141  vi index.py
+  142  vi dockerfile
+  143  docker build -t pythonapp .
+  144  cat dockerfile
+  145  ls
+  146  cat index.py
+  147  cat requirement.txt
+  148  cat dockerfile
+  149  docker images
+  150  yum install git
+  151  git config --global user.name "gopal"
+  152  git config --global user.email "gopal1409@gmail.com"
+  153  git add .
+  154  git init
+  155  git add .
+  156  git commit -m "pythonimage"
+  157  git remote add origin https://github.com/gopal1409/amdocpython.git
+  158  git push -u origin master
