@@ -4,3 +4,7 @@
    14  systemctl start docker
    15  systemctl enable docker
    16  docker --version
+   
+   run you first docker container
+   docker container run --publish 80:80 --detach nginx
+
