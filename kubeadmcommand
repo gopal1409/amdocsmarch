@@ -9,4 +9,11 @@ To start using your cluster, you need to run the following as a regular user:
   
    43  kubectl get pod --all-namespaces
    44  docker ps
+   CNI Plugin
+
+kubectl create -f https://docs.projectcalico.org/manifests/tigera-operator.yaml
+kubectl create -f https://docs.projectcalico.org/manifests/custom-resources.yaml
+
+
+
 
