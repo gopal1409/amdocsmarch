@@ -14,6 +14,8 @@ To start using your cluster, you need to run the following as a regular user:
 kubectl create -f https://docs.projectcalico.org/manifests/tigera-operator.yaml
 kubectl create -f https://docs.projectcalico.org/manifests/custom-resources.yaml
 
+Deploy first Pod
+kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
 
 
 
