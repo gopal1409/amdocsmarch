@@ -22,6 +22,7 @@ kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
    
    How to expose an Pod in kubernetes
    kubectl expose pod my-first-pod --type=NodePort --port=80 --name=my-first-service
-
-
+to check the log in container
+89  kubectl logs my-first-pod
+   90  kubectl logs -f my-first-pod
 
