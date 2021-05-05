@@ -16,6 +16,9 @@ kubectl create -f https://docs.projectcalico.org/manifests/custom-resources.yaml
 
 Deploy first Pod
 kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
+79  kubectl get pod
+   
+   81  kubectl describe pod
 
 
 
