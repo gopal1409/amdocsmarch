@@ -44,3 +44,10 @@ to check the log in container
 Autoscaling
 163  kubectl autoscale deployment.v1.apps/myapp3-deployment --min=5 --max=10 --cpu-percent=80
   164  kubectl get rs
+  
+  proportional scaling
+   127  kubectl set image deployment.v1.apps/myapp3-deployment myapp3-container=nginx
+  128  kubectl get rs
+  129  kubectl get deploy
+  130  kubectl get rs -w
+
