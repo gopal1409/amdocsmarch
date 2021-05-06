@@ -25,4 +25,19 @@ kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
 to check the log in container
 89  kubectl logs my-first-pod
    90  kubectl logs -f my-first-pod
+   
+   Deployment Rollout
+    142  kubectl set image deployment.v1.apps/myapp3-deployment myapp3-container=piuma/phpsysinfo --record=true
+  143  kubectl set image deployment.v1.apps/myapp3-deployment myapp3-container=piuma/phpsysinfo:1.0 --record=true
+  144  kubectl get deploy
+  145  kubectl get rs
+  146  kubectl get pod
+  147  kubectl describe pod myapp3-deployment-6468dff6c6-wh74m
+  148  kubectl rollout status deployment/myapp3-deployment
+  149  kubectl rollout history deployment.v1.apps/myapp3-deployment
+  150  kubectl rollout undo deployment.v1.apps/myapp3-deployment
+  151  kubectl rollout status deployment/myapp3-deployment
+  152  kubectl rollout history deployment.v1.apps/myapp3-deployment
+  153  kubectl rollout undo deployment.v1.apps/myapp3-deployment --to-revision=5
+
 
