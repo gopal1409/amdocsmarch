@@ -41,3 +41,6 @@ to check the log in container
   153  kubectl rollout undo deployment.v1.apps/myapp3-deployment --to-revision=5
 
 
+Autoscaling
+163  kubectl autoscale deployment.v1.apps/myapp3-deployment --min=5 --max=10 --cpu-percent=80
+  164  kubectl get rs
